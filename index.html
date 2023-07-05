@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mine aux cristaux</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="./game.js"></script>
+    </head>
+    <body>
+        <div class="gameContainer">
+            <h1>Mine aux cristaux</h1>
+            <div class="pickContainer">
+                <image src="./images/icone_pioche.png" class="pickIcon">
+                <div class="pickBarContainer">
+                    <div class="pickBar" id="pickBar"></div>
+                    <div class="pickDurablity" id="pickDurablity">40/40</div>
+                </div>
+            </div>
+            <div class="gemContainer">
+                <div class="gemCount" id="gemCount">0</div>
+                <image src="./images/icone_cristal.png" class="gemIcon">
+            </div>
+            <div class="gameOverWindow" id="gameOverWindow">
+                <h3><b>Game Over</b></h3>
+                <div class="gameOverScore">Cristaux: <span id="score"></span></div>
+                <input type="button" class="rectButton" id="restart" value="Nouvelle partie">
+            </div>
+            <canvas id="gameCanvas"></canvas>
+            <input type="button" class="squareButton" id="moveUp" value="Up">
+            <input type="button" class="squareButton" id="moveDown" value="Down">
+            <input type="button" class="squareButton" id="moveLeft" value="Left">
+            <input type="button" class="squareButton" id="moveRight" value="Right">
+            <input type="button" class="rectButton" id="quitGame" value="Quitter">
+        </div>
+    </body>
+</html>
